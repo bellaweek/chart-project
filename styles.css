@@ -1,0 +1,171 @@
+
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    font-size: 16px;
+    font-family: Garamond, Times;
+    padding-bottom: 4px;
+    }
+
+img {
+    display:block;
+    margin: 0 auto;
+    width:100%;
+}
+
+a:link {
+    color: #6F8FAF ;
+}
+
+a:visited {
+    color: #6F8FAF;
+}
+
+a:hover {
+      text-decoration: none;
+    }
+
+hr{
+    border: none;
+    height: .5px;
+    background-color: dimgrey;
+
+} 
+
+
+#special-hr {
+    background-color: lightgray;
+    height: .5px;
+}
+
+.headline{
+    text-align: center;
+    max-width:850px;
+    margin: 0 auto;
+}
+
+.subhead{
+    display: block;
+    max-width:850px;
+    text-align: center;
+    margin:6px;
+}
+
+.byline{
+    display: block;
+    max-width:1000px;
+    text-align: left;
+    margin:0px;
+    padding: 1px 0px;
+    font-size: 14px;
+    font-family: Helvetica, Garamond;
+    line-height: .5;
+}
+
+.story{
+    display: block;
+    max-width:850px;
+    margin:6px;
+    padding:6px;
+}
+
+figure {
+  padding: 0px;
+  margin: auto;
+}
+
+figcaption {
+    text-align: left;
+    font-size: 14px;
+    color: darkgrey;
+    font-family: Helvetica, sans-serif
+    padding: 0px 12px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+  figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+@media(min-width: 681px) {
+
+img {
+    max-width: 1000px;
+}
+
+.subhead{
+    margin:0 auto;
+    padding: 0px 12px;
+}
+
+.byline{
+    margin:0 auto;
+    padding: 3px 0px;
+}
+
+.story{
+    margin:0 auto;
+    padding: 0px 12px;
+}
+
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+body {
+    display:block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: left;
+    font-size: 14px;
+    color: darkgrey;
+    font-family: Helvetica, sans-serif
+    padding: 0px 12px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-left: 0px;
+
+}
+
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+figcaption {
+    text-align: left;
+    font-size: 14px;
+    color: darkgrey;
+    font-family: Helvetica, sans-serif
+    padding: 0px 12px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-left: 0px;
+}
